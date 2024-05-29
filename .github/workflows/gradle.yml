@@ -29,7 +29,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Grant execute permission for gradlew
-      run: chmod +x path/to/gradlew
+      run: Set-ExecutionPolicy Bypass -Scope Process -Force; & .\gradlew.bat
 
     # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
